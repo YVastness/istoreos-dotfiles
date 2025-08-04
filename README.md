@@ -35,3 +35,14 @@
 
 https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
 
+## 安装 openclash
+
+```bash
+  # 可以上 GitHub 找最新版本下载
+  curl -L -o /tmp/openclash.ipk https://github.com/vernesong/OpenClash/releases/download/v0.46.137/luci-app-openclash_0.46.137_all.ipk
+  opkg install /tmp/openclash.ipk
+# 安装内核
+  curl -L -o /tmp/mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.12/mihomo-linux-amd64-compatible-v1.19.12.gz
+mkdir -p /etc/openclash/core/
+gunzip -c /tmp/mihomo.gz > /etc/openclash/core/clash_meta
+```
