@@ -43,6 +43,20 @@ https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
   opkg install /tmp/openclash.ipk
 # 安装内核
   curl -L -o /tmp/mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.12/mihomo-linux-amd64-compatible-v1.19.12.gz
-mkdir -p /etc/openclash/core/
-gunzip -c /tmp/mihomo.gz > /etc/openclash/core/clash_meta
+  mkdir -p /etc/openclash/core/
+  gunzip -c /tmp/mihomo.gz > /etc/openclash/core/clash_meta
+  
+```
+
+## 安装软件
+
+```bash
+  opkg install git git-http make golang
+
+  # 下载安装 chezmoi
+  git clone https://github.com/twpayne/chezmoi.git
+  cd chezmoi
+  make install-from-git-working-copy
+  mv ~/go/bin/chezmoi /bin
+  rm -rf ../chezmoi
 ```
