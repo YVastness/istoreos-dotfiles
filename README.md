@@ -66,4 +66,5 @@ https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
   cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo # 如果报错，可以重复执行 make CMAKE_BUILD_TYPE=RelWithDebInfo。
   make install
   cp /usr/local/bin/nvim /usr/bin
+  git clone https://github.com/LazyVim/starter ~/.config/nvim # 安装 LazyVim
 ```
