@@ -52,6 +52,8 @@ https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
 
 ```bash
   opkg install git git-http make golang
+  # 安装 cargo
+  curl https://sh.rustup.rs -sSf | sh
 
   # 下载安装 chezmoi
   git clone https://github.com/twpayne/chezmoi.git
