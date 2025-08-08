@@ -88,6 +88,10 @@ root:x:0:0:root:/root:/bin/bash
   mv ~/go/bin/chezmoi /bin
   rm -rf ../chezmoi
 
+  # 安装 fzf
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+
   # 安装 neovim
   cd /tmp
   git clone https://github.com/neovim/neovim
