@@ -48,12 +48,38 @@ https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
   
 ```
 
+## 切换 shell 为 bash
+
+在 OpenWrt 上通过 SSH 登录后默认使用的是 BusyBox 提供的 ash，如果你希望改为 bash 并切换到它，可以使用以下方法：
+
+修改 /etc/passwd 将默认 shell 改为 bash  
+1.	安装 Bash（如尚未安装）：
+
+```bash
+opkg update
+opkg install bash
+```
+2. 确保 `/etc/shells` 中包含 Bash 路径（可选但推荐）：  
+```bash
+echo "/bin/bash" >> /etc/shells
+```
+3.	编辑 `/etc/passwd` 将对应用户的 shell 修改成 `/bin/bash`，例如：  
+```bash
+root:x:0:0:root:/root:/bin/bash
+```
+
+这样登录时就会默认进入 Bash。 ￼
+
 ## 安装软件
 
 ```bash
   opkg install git git-http make golang
   # 安装 cargo
   curl https://sh.rustup.rs -sSf | sh
+
+  cargo install starship --locked
+
+  go install github.com/jesseduffield/lazydocker@latest
 
   # 下载安装 chezmoi
   git clone https://github.com/twpayne/chezmoi.git
