@@ -80,6 +80,7 @@ root:x:0:0:root:/root:/bin/bash
   cargo install starship --locked
   cargo install eza
   cargo install du-dust
+  cargo install --locked bat
 
   go install github.com/jesseduffield/lazydocker@latest
 
