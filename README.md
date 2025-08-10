@@ -81,6 +81,7 @@ root:x:0:0:root:/root:/bin/bash
   cargo install eza
   cargo install du-dust
   cargo install --locked bat
+  cargo install --locked yazi-fm yazi-cli
 
   go install github.com/jesseduffield/lazydocker@latest
 
