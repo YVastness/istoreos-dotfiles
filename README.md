@@ -78,6 +78,8 @@ root:x:0:0:root:/root:/bin/bash
   curl https://sh.rustup.rs -sSf | sh
 
   cargo install starship --locked
+  cargo install eza
+  cargo install du-dust
 
   go install github.com/jesseduffield/lazydocker@latest
 
