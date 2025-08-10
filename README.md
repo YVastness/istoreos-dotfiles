@@ -73,7 +73,7 @@ root:x:0:0:root:/root:/bin/bash
 ## 安装软件
 
 ```bash
-  opkg install git git-http make golang
+  opkg install git git-http make golang less
   # 安装 cargo
   curl https://sh.rustup.rs -sSf | sh
 
