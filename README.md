@@ -45,7 +45,8 @@ https://github.com/user-attachments/assets/ca5ff105-64df-4dde-b3a9-2fe1844696c1
   curl -L -o /tmp/mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.12/mihomo-linux-amd64-compatible-v1.19.12.gz
   mkdir -p /etc/openclash/core/
   gunzip -c /tmp/mihomo.gz > /etc/openclash/core/clash_meta
-  
+# 将配置文件
+  https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/mix.yaml
 ```
 
 ## 切换 shell 为 bash
