@@ -158,7 +158,6 @@ rules:
   - RULE-SET,taiwan_domain,♻️ 台湾自动
   - RULE-SET,private_domain,直连
   - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
@@ -186,7 +185,6 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list"}
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
@@ -203,9 +201,9 @@ rule-providers:
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   # 自定义规则集
-  my_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/rule.list"}
-  japan_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/japan.list"}
-  taiwan_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/taiwan.list"}
+  my_domain: { <<: *class, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/rule.list"}
+  japan_domain: { <<: *class, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/japan.list"}
+  taiwan_domain: { <<: *class, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/taiwan.list"}
   
   cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
