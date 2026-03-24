@@ -153,39 +153,9 @@ proxy-groups:
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
-  - DOMAIN-SUFFIX,aipanso.com,🚀 默认代理
-  - DOMAIN-SUFFIX,bad.news,🚀 默认代理
-  - DOMAIN-SUFFIX,yourbittorrent.com,🚀 默认代理
-  #- DOMAIN-SUFFIX,limetorrents.fun,🚀 默认代理
-  - DOMAIN-KEYWORD,limetorrents,🚀 默认代理
-  - DOMAIN-SUFFIX,itorrents.net,🚀 默认代理
-  - DOMAIN-SUFFIX,yourbittorrent.com,🚀 默认代理
-  #- DOMAIN-SUFFIX,https://cloudtorrents.com/,🚀 默认代理
-  - DOMAIN-KEYWORD,cloudtorrents,🚀 默认代理
-  - DOMAIN-SUFFIX,glodls.to,🚀 默认代理
-  - DOMAIN-SUFFIX,mikanime.tv,🚀 默认代理
-  - DOMAIN-SUFFIX,torrents-csv.com,🚀 默认代理
-  - DOMAIN-SUFFIX,filemood.com,🚀 默认代理
-  - DOMAIN-SUFFIX,javzimu.com,🚀 默认代理
-  - DOMAIN-SUFFIX,mikanani.me,🚀 默认代理
-  - DOMAIN-SUFFIX,dmm.co.jp,♻️ 日本自动
-  - DOMAIN-KEYWORD,dmm,♻️ 日本自动
-  - DOMAIN-SUFFIX,bitsearch.to,🚀 默认代理
-  - DOMAIN-SUFFIX,eiorigin.com,🚀 默认代理
-  - DOMAIN-SUFFIX,eztvx.to,🚀 默认代理
-  - DOMAIN-SUFFIX,torlock.com,🚀 默认代理
-  - DOMAIN-SUFFIX,torrentproject.cc,🚀 默认代理
-  - DOMAIN-SUFFIX,javcv.com,🚀 默认代理
-  - DOMAIN-SUFFIX,fc2ppvdb.com,🚀 默认代理
-  - DOMAIN-SUFFIX,javten.com,🚀 默认代理
-  - DOMAIN-SUFFIX,fc2hub.com,🚀 默认代理
-  - DOMAIN-SUFFIX,trakt.tv,🚀 默认代理
-  - DOMAIN-SUFFIX,bt4gprx.com,🚀 默认代理
-  - DOMAIN-SUFFIX,downloadtorrentfile.com,🚀 默认代理
-  - DOMAIN-SUFFIX,24av.net,🚀 默认代理
-  - DOMAIN-SUFFIX,javdb.com,♻️ 台湾自动
-  - DOMAIN-SUFFIX,www.zghf.net,🚀 默认代理
-  - DOMAIN-SUFFIX,yy.filmtoday.cc,🚀 默认代理
+  - RULE-SET,my_domain,🚀 默认代理
+  - RULE-SET,japan_domain,♻️ 日本自动
+  - RULE-SET,taiwan_domain,♻️ 台湾自动
   - RULE-SET,private_domain,直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 默认代理
@@ -232,6 +202,10 @@ rule-providers:
   gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+  # 自定义规则集
+  my_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/rule.list"}
+  japan_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/japan.list"}
+  taiwan_domain: { <<: *domain, url: "https://raw.githubusercontent.com/YVastness/istoreos-dotfiles/refs/heads/main/proxy/taiwan.list"}
   
   cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
