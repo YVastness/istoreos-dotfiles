@@ -19,13 +19,13 @@
 - DOMAIN-SUFFIX,torlock.com
 - DOMAIN-SUFFIX,torrentproject.cc
 - DOMAIN-SUFFIX,bt4gprx.com
+- DOMAIN-SUFFIX,downloadtorrentfile.com
 
 # 其他磁力网站
 - DOMAIN-SUFFIX,mikanime.tv
 - DOMAIN-SUFFIX,mikanani.me
 - DOMAIN-SUFFIX,bitsearch.to
 - DOMAIN-SUFFIX,eztvx.to
-- DOMAIN-SUFFIX,downloadtorrentfile.com
 
 # 其他
 - DOMAIN-SUFFIX,trakt.tv
