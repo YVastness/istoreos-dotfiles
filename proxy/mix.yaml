@@ -3,8 +3,8 @@
 # 跑裸核用户请自行去掉下方控制面板模块的注释。
 # 机场订阅
 proxy-providers:
-  xingjiabijichang:
-    url: "https://proxyinfo.net/api/v1/client/subscribe?token=1ee76028fe42afa4d11a55408b982a7f"
+  filmtoday2:
+    url: "https://bb.filmtoday.top/film/2d8eb0c65dea8090a1d96d94e7adb548"
     type: http
     interval: 86400
     health-check:
