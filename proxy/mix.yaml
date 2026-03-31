@@ -153,9 +153,50 @@ proxy-groups:
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
-  - RULE-SET,my_domain,🚀 默认代理
-  - RULE-SET,japan_domain,♻️ 日本自动
-  - RULE-SET,taiwan_domain,♻️ 台湾自动
+  # Girls 网站
+  - DOMAIN-SUFFIX,bad.news
+  - DOMAIN-SUFFIX,javzimu.com
+  - DOMAIN-SUFFIX,eiorigin.com
+  - DOMAIN-SUFFIX,javcv.com
+  - DOMAIN-SUFFIX,fc2ppvdb.com
+  - DOMAIN-SUFFIX,javten.com
+  - DOMAIN-SUFFIX,fc2hub.com
+  - DOMAIN-SUFFIX,24av.net
+  - DOMAIN-SUFFIX,twitter-ero-video-ranking.com
+
+  # Girls 磁力网站
+  - DOMAIN-SUFFIX,yourbittorrent.com
+  - DOMAIN-KEYWORD,limetorrents
+  - DOMAIN-SUFFIX,itorrents.net
+  - DOMAIN-SUFFIX,yourbittorrent.com
+  - DOMAIN-KEYWORD,cloudtorrents
+  - DOMAIN-SUFFIX,filemood.com
+  - DOMAIN-SUFFIX,torlock.com
+  - DOMAIN-SUFFIX,torrentproject.cc
+  - DOMAIN-SUFFIX,bt4gprx.com
+  - DOMAIN-SUFFIX,downloadtorrentfile.com
+  - DOMAIN-SUFFIX,projectjav.com
+
+  # 其他磁力网站
+  - DOMAIN-SUFFIX,mikanime.tv
+  - DOMAIN-SUFFIX,mikanani.me
+  - DOMAIN-SUFFIX,bitsearch.to
+  - DOMAIN-SUFFIX,eztvx.to
+
+  # 其他
+  - DOMAIN-SUFFIX,trakt.tv
+  - DOMAIN-SUFFIX,glodls.to
+  - DOMAIN-SUFFIX,aipanso.com
+  - DOMAIN-SUFFIX,yy.filmtoday.cc
+  
+  # taiwan
+  - DOMAIN-SUFFIX,javdb.com
+  - DOMAIN-SUFFIX,missav.ws
+  - DOMAIN-SUFFIX,missav.ai
+
+  # japan
+  - DOMAIN-SUFFIX,dmm.co.jp
+  
   - RULE-SET,private_domain,直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,ai,🤖 ChatGPT
