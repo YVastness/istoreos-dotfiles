@@ -153,49 +153,49 @@ proxy-groups:
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
-  # Girls 网站
-  - DOMAIN-SUFFIX,bad.news
-  - DOMAIN-SUFFIX,javzimu.com
-  - DOMAIN-SUFFIX,eiorigin.com
-  - DOMAIN-SUFFIX,javcv.com
-  - DOMAIN-SUFFIX,fc2ppvdb.com
-  - DOMAIN-SUFFIX,javten.com
-  - DOMAIN-SUFFIX,fc2hub.com
-  - DOMAIN-SUFFIX,24av.net
-  - DOMAIN-SUFFIX,twitter-ero-video-ranking.com
+   # Girls 网站
+  - DOMAIN-SUFFIX,bad.news,🚀 默认代理
+  - DOMAIN-SUFFIX,javzimu.com,🚀 默认代理
+  - DOMAIN-SUFFIX,eiorigin.com,🚀 默认代理
+  - DOMAIN-SUFFIX,javcv.com,🚀 默认代理
+  - DOMAIN-SUFFIX,fc2ppvdb.com,🚀 默认代理
+  - DOMAIN-SUFFIX,javten.com,🚀 默认代理
+  - DOMAIN-SUFFIX,fc2hub.com,🚀 默认代理
+  - DOMAIN-SUFFIX,24av.net,🚀 默认代理
+  - DOMAIN-SUFFIX,twitter-ero-video-ranking.com,🚀 默认代理
 
   # Girls 磁力网站
-  - DOMAIN-SUFFIX,yourbittorrent.com
-  - DOMAIN-KEYWORD,limetorrents
-  - DOMAIN-SUFFIX,itorrents.net
-  - DOMAIN-SUFFIX,yourbittorrent.com
-  - DOMAIN-KEYWORD,cloudtorrents
-  - DOMAIN-SUFFIX,filemood.com
-  - DOMAIN-SUFFIX,torlock.com
-  - DOMAIN-SUFFIX,torrentproject.cc
-  - DOMAIN-SUFFIX,bt4gprx.com
-  - DOMAIN-SUFFIX,downloadtorrentfile.com
-  - DOMAIN-SUFFIX,projectjav.com
+  - DOMAIN-SUFFIX,yourbittorrent.com,🚀 默认代理
+  - DOMAIN-KEYWORD,limetorrents,🚀 默认代理
+  - DOMAIN-SUFFIX,itorrents.net,🚀 默认代理
+  - DOMAIN-SUFFIX,yourbittorrent.com,🚀 默认代理
+  - DOMAIN-KEYWORD,cloudtorrents,🚀 默认代理
+  - DOMAIN-SUFFIX,filemood.com,🚀 默认代理
+  - DOMAIN-SUFFIX,torlock.com,🚀 默认代理
+  - DOMAIN-SUFFIX,torrentproject.cc,🚀 默认代理
+  - DOMAIN-SUFFIX,bt4gprx.com,🚀 默认代理
+  - DOMAIN-SUFFIX,downloadtorrentfile.com,🚀 默认代理
+  - DOMAIN-SUFFIX,projectjav.com,🚀 默认代理
 
   # 其他磁力网站
-  - DOMAIN-SUFFIX,mikanime.tv
-  - DOMAIN-SUFFIX,mikanani.me
-  - DOMAIN-SUFFIX,bitsearch.to
-  - DOMAIN-SUFFIX,eztvx.to
+  - DOMAIN-SUFFIX,mikanime.tv,🚀 默认代理
+  - DOMAIN-SUFFIX,mikanani.me,🚀 默认代理
+  - DOMAIN-SUFFIX,bitsearch.to,🚀 默认代理
+  - DOMAIN-SUFFIX,eztvx.to,🚀 默认代理
 
   # 其他
-  - DOMAIN-SUFFIX,trakt.tv
-  - DOMAIN-SUFFIX,glodls.to
-  - DOMAIN-SUFFIX,aipanso.com
-  - DOMAIN-SUFFIX,yy.filmtoday.cc
+  - DOMAIN-SUFFIX,trakt.tv,🚀 默认代理
+  - DOMAIN-SUFFIX,glodls.to,🚀 默认代理
+  - DOMAIN-SUFFIX,aipanso.com,🚀 默认代理
+  - DOMAIN-SUFFIX,yy.filmtoday.cc,🚀 默认代理
   
   # taiwan
-  - DOMAIN-SUFFIX,javdb.com
-  - DOMAIN-SUFFIX,missav.ws
-  - DOMAIN-SUFFIX,missav.ai
+  - DOMAIN-SUFFIX,javdb.com,♻️ 台湾自动
+  - DOMAIN-SUFFIX,missav.ws,♻️ 台湾自动
+  - DOMAIN-SUFFIX,missav.ai,♻️ 台湾自动
 
   # japan
-  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.co.jp,♻️ 日本自动
   
   - RULE-SET,private_domain,直连
   - RULE-SET,apple_domain,🍎 Apple
